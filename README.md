@@ -25,6 +25,44 @@ Whether you're a professional dealing with numerous screenshots daily or someone
 - Adds content description as metadata to PNG files
 - Renames files with AI-generated names
 
+# Screenshot Holmes
+
+Sometimes you have to be Sherlock Holmes to find that screenshot you just took. Enter Screenshot Holmes, your digital detective for image organization.
+
+## Introduction
+
+Screenshot Holmes is a Python-based tool designed to bring order to the chaos of your screenshot collection. Just as the famous detective could deduce a person's life story from a mere glance, our tool analyzes your images to understand their content, helping you locate and organize your visual information with unprecedented ease.
+
+## What does Screenshot Holmes do?
+
+Our digital detective employs state-of-the-art AI to investigate your screenshots:
+
+1. **Analyze**: Uses advanced image recognition to understand the content of each screenshot.
+2. **Rename**: Generates descriptive filenames based on the image content, making it easier to find what you need.
+3. **Organize**: Adds relevant metadata to each file, enhancing searchability and organization.
+4. **Deduce**: Helps you quickly locate specific screenshots based on their content, not just when they were taken.
+
+### Example:
+
+Let's say you've taken a screenshot of movie showtimes:
+
+![Beetlejuice movie showtimes](https://github.com/topherjaynes/Screenshot-Holmes/raw/main/Beetlejuice_PG-13_1h44m_Showtimes_4DX_IMAX_RPX_Standard.jpg)
+
+**Before**: Screenshot 2024-09-10 at 7.16.29 PM.png
+
+**After**: Beetlejuice_PG-13_1h44m_Showtimes_4DX_IMAX_RPX_Standard.png
+
+Screenshot Holmes analyzes the image and renames it based on the key information:
+- Movie title: Beetlejuice
+- Rating: PG-13
+- Duration: 1 hour 44 minutes
+- Content type: Showtimes
+- Viewing formats: 4DX, IMAX, RPX, Standard
+
+This descriptive filename makes it much easier to find this specific screenshot later, whether you're searching for "Beetlejuice showtimes" or "IMAX movies".
+
+Whether you're a professional dealing with numerous screenshots daily or someone who occasionally needs to find that one important capture, Screenshot Holmes is here to streamline your workflow and save you valuable time.
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
