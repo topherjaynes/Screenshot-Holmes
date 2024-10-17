@@ -8,7 +8,7 @@ Screenshot Holmes is a Python-based tool designed to bring order to the chaos of
 
 ## What does Screenshot Holmes do?
 
-Our digital detective employs state-of-the-art AI to investigate your screenshots:
+Our digital detective employs state-of-the-art (well at least this release cycle state of the art) AI to investigate your screenshots:
 
 1. **Analyze**: Uses advanced image recognition to understand the content of each screenshot.
 2. **Rename**: Generates descriptive filenames based on the image content, making it easier to find what you need.
