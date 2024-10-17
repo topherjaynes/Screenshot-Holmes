@@ -84,4 +84,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or feedback, please contac [chris.jaynes@gmail.com] or submit a pr.
+If you have any questions or feedback, please contact [chris.jaynes@gmail.com] or submit a pr.
