@@ -34,8 +34,6 @@ Screenshot Holmes analyzes the image and renames it based on the key information
 
 This descriptive filename makes it much easier to find this specific screenshot later, whether you're searching for "Beetlejuice showtimes" or "IMAX movies".
 
-Whether you're a professional dealing with numerous screenshots daily or someone who occasionally needs to find that one important capture, Screenshot Holmes is here to streamline your workflow and save you valuable time.
-
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
