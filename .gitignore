@@ -1,0 +1,6 @@
+/screnv
+*.png
+*.json
+*.csv
+.env
+.DS_store
