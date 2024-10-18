@@ -11,13 +11,17 @@ load_dotenv()
 # Set up OpenAI client
 client = OpenAI()
 
-def encode_image(image_path):
+def encode_image(image_path: str) -> str:
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-def get_image_content(image_path):
+def get_image_content(image_path: str) -> str:
     """
     Use OpenAI's vision capabilities to extract content from the image.
+    Only using the 4o-mini vision, but you can try whatever model you want.
+    There is some speculation Openai is using the same model either way
+    Read more here: https://platform.openai.com/docs/guides/vision
+
     """
     base64_image = encode_image(image_path)
     
@@ -45,9 +49,10 @@ def get_image_content(image_path):
     
     return response.choices[0].message.content.strip()
 
-def get_new_name(image_content):
+def get_new_name(image_content: str) ->str:
     """
     Use ChatGPT to generate a new name based on the image content.
+    You can tweak the user prompt to be more specific or different tone.
     """
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -58,7 +63,7 @@ def get_new_name(image_content):
     )
     return response.choices[0].message.content.strip()
 
-def add_metadata(image_path, content):
+def add_metadata(image_path: str, content: str) -> str:
     """
     Add metadata to the image file using Pillow.
     """
@@ -70,7 +75,7 @@ def add_metadata(image_path, content):
     except Exception as e:
         print(f"Error adding metadata to {image_path}: {str(e)}")
 
-def process_screenshots(folder_path):
+def process_screenshots(folder_path: str) -> str:
     for filename in os.listdir(folder_path):
         if filename.lower().endswith('.png') and 'screenshot' in filename.lower():
             file_path = os.path.join(folder_path, filename)
