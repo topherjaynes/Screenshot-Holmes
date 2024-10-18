@@ -2,6 +2,8 @@
 
 Sometimes you have to be Sherlock Holmes to find that screenshot you just took. Enter Screenshot Holmes, your digital detective for image organization.
 
+![Screenshot Holmes](https://github.com/topherjaynes/Screenshot-Holmes/raw/main/sherlock.jpg)
+
 ## Introduction
 
 Screenshot Holmes is a Python-based tool designed to bring order to the chaos of your screenshot collection. Just as the famous detective could deduce a person's life story from a mere glance, our tool analyzes your images to understand their content, helping you locate and organize your visual information with unprecedented ease.
