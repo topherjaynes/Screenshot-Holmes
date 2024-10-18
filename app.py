@@ -68,6 +68,7 @@ def add_metadata(image_path: str, content: str) -> str:
     """
     Add metadata to the image file using Pillow.
     """
+    print(content)
     try:
         with Image.open(image_path) as img:
             metadata = PngInfo()
