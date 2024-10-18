@@ -2,7 +2,7 @@
 
 Sometimes you have to be Sherlock Holmes to find that screenshot you just took. Enter Screenshot Holmes, your digital detective for image organization.
 
-![Screenshot Holmes](https://github.com/topherjaynes/Screenshot-Holmes/imgs/raw/main/sherlock.jpg)
+![Screenshot Holmes](https://github.com/topherjaynes/Screenshot-Holmes/raw/main/imgs/sherlock.jpg)
 
 ## Introduction
 
@@ -21,7 +21,7 @@ Our digital detective employs state-of-the-art AI to investigate your screenshot
 
 Let's say you've taken a screenshot of movie showtimes:
 
-![Beetlejuice movie showtimes](https://github.com/topherjaynes/Screenshot-Holmes/imgs/raw/main/Beetlejuice_PG-13_1h44m_Showtimes_4DX_IMAX_RPX_Standard.jpg)
+![Beetlejuice movie showtimes](https://github.com/topherjaynes/Screenshot-Holmes/raw/main/imgs/Beetlejuice_PG-13_1h44m_Showtimes_4DX_IMAX_RPX_Standard.jpg)
 
 **Before**: Screenshot 2024-09-10 at 7.16.29 PM.png
 
