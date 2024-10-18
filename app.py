@@ -1,4 +1,5 @@
 import os
+import re
 import base64
 from PIL import Image
 from PIL.PngImagePlugin import PngInfo
@@ -75,9 +76,46 @@ def add_metadata(image_path: str, content: str) -> str:
     except Exception as e:
         print(f"Error adding metadata to {image_path}: {str(e)}")
 
+def is_screenshot(filename: str) -> bool:
+    """
+    Check if filename is likely to be a screenshot.
+    To research, does the image contain a meta tag if it came from the system screenshot tool?
+
+    Created a method for all the types of formats the screenshot file name apears
+    I've seen: Screen shot
+        Screenshot
+    And I am sure there are many more.
+    Windows looks to do Screenshot with their snip tool
+    OSX as well.
+
+    Args:
+        filename(str): the filename to check
+    
+    Returns:
+        bool: True if the file is likely a screenshot, false if not
+    """
+    # Convert to lowercase and remove all whitespace
+    clean_name = re.sub(r'\s+', '', filename.lower())
+    
+    # Check if it ends with .png
+    if not clean_name.endswith('.png'):
+        return False
+    
+    #list of indicators add what your tool of choice does here
+    screenshot_indicators = ['screenshot', 'screen_shot', 'screenclip', 'capture', 'snip']
+    
+    # Check if any of the indicators are in the cleaned filename
+    return any(indicator in clean_name for indicator in screenshot_indicators)
+
 def process_screenshots(folder_path: str) -> str:
+    """
+    Process all screenshots in the given folder.
+
+    Args:
+    folder_path (str): Path to the folder containing screenshots.
+    """
     for filename in os.listdir(folder_path):
-        if filename.lower().endswith('.png') and 'screenshot' in filename.lower():
+        if is_screenshot(filename):
             file_path = os.path.join(folder_path, filename)
             
             try:
